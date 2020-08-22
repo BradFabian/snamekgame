@@ -5,6 +5,7 @@ const startButton = document.querySelector("#start");
 const score = document.querySelector("#score");
 
 let squareArray = [];
+let currentSnake = [];
 
 function createGrid() {
   // create 100 of these elements
@@ -23,3 +24,5 @@ function createGrid() {
 }
 
 createGrid();
+
+currentSnake.forEach((index) => sqaureArray[index].classList.add("snake"));
