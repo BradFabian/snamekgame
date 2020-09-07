@@ -8,14 +8,23 @@ body {
 
 .wrapper {
   margin: 0 auto;
+  height: 100%;
   text-align: center;
-
+  display: flex;
+  justify-content: space-around;
   font-family: "Press Start 2P", sans-serif;
   color: white;
   text-shadow: rgba(255, 255, 255, 0.5);
   background-image: linear-gradient(to bottom right, #3fa8c6, #ff9ab2);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+aside {
+  flex-basis: 30%;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-top: 20px;
 }
 
 button {
@@ -65,4 +74,7 @@ button:hover {
   background-color: red;
   border-radius: 40%;
   position: relative;
+}
+.snakeGame {
+  padding-top: 20px;
 }
