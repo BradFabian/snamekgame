@@ -5,7 +5,8 @@ const startButton = document.querySelector("#start");
 const score = document.querySelector("#score");
 
 let squareArray = [];
-let currentSnake = [];
+let currentSnake = [2, 1, 0];
+let direction = 1;
 
 function createGrid() {
   // create 100 of these elements
@@ -24,5 +25,20 @@ function createGrid() {
 }
 
 createGrid();
+console.log(currentSnake);
+currentSnake.forEach((index) => squareArray[index].classList.add("snake"));
 
-currentSnake.forEach((index) => sqaureArray[index].classList.add("snake"));
+function move() {
+  // remove last element from currentSnake array
+  const tail = currentSnake.pop();
+  console.log(tail);
+  console.log(currentSnake);
+  // remove styling fro element
+  squareArray[tail].classList.remove("snake");
+  // add square in direction we are heading
+  const head = currentSnake.unshift(currentSnake[0] + direction);
+  // add styling for element
+  squareArray[head].classList.add("snake");
+}
+
+move();
