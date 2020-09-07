@@ -2,14 +2,53 @@ html,
 body {
   margin: 10;
   padding: 10;
+  width: 100%;
+  height: 100%;
+  font-family: "Press Start 2P", sans-serif;
+  color: white;
+  text-shadow: rgba(255, 255, 255, 0.5);
+  background-image: linear-gradient(to bottom right, #3fa8c6, #ff9ab2);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper {
+  margin: 0 auto;
+  text-align: center;
+}
+
+button {
+  font-family: inherit;
+  background: rgba(233, 56, 56, 0.5);
+  border-bottom: 6px inset rgba(0, 0, 0, 0.5);
+  border-left: 6px inset rgba(0, 0, 0, 0.5);
+  border-right: 6px inset rgba(255, 255, 255, 0.5);
+  border-top: 6px inset rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 1rem;
+  min-width: 80px;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  width: auto;
+}
+
+button:hover {
+  background: #ee77d0;
 }
 
 .grid {
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   width: 200px;
   height: 200px;
   border: solid 2px black;
+  box-shadow: 5px 10px 10px #888888;
+  background-color: rgb(211, 181, 181);
 }
 
 .square {
@@ -22,5 +61,16 @@ body {
 }
 
 .apple {
-  background-color: blue;
+  background-color: red;
+  border-radius: 40%;
+  position: relative;
+}
+
+.apple .leaf {
+  position: absolute;
+  width: 16em;
+  height: 1em;
+  top: 0;
+  right: 8;
+  background-color: green;
 }

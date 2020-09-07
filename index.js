@@ -1,6 +1,7 @@
 const grid = document.querySelector(".grid");
 const startButton = document.getElementById("start");
 const scoreDisplay = document.getElementById("score");
+
 let squares = [];
 let currentSnake = [2, 1, 0];
 let direction = 1;
@@ -64,7 +65,7 @@ function move() {
   // deal with snake head getting apple
   if (squares[currentSnake[0]].classList.contains("apple")) {
     //remove the class apple
-    squares[currentSnake[0]].classList.remove("apple");
+    squares[currentSnake[0]].classList.remove("apple", "leaf");
     // grow our snake by adding class of snake to it
     squares[tail].classList.add("snake");
     // grow our snake array
