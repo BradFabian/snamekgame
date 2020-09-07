@@ -92,3 +92,7 @@ footer a {
   font-family: inherit;
   letter-spacing: 0.3em;
 }
+
+footer a:hover {
+  color: pink;
+}
