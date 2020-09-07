@@ -4,17 +4,18 @@ body {
   padding: 10;
   width: 100%;
   height: 100%;
+}
+
+.wrapper {
+  margin: 0 auto;
+  text-align: center;
+
   font-family: "Press Start 2P", sans-serif;
   color: white;
   text-shadow: rgba(255, 255, 255, 0.5);
   background-image: linear-gradient(to bottom right, #3fa8c6, #ff9ab2);
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.wrapper {
-  margin: 0 auto;
-  text-align: center;
 }
 
 button {
