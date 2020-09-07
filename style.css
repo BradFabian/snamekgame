@@ -65,12 +65,3 @@ button:hover {
   border-radius: 40%;
   position: relative;
 }
-
-.apple .leaf {
-  position: absolute;
-  width: 16em;
-  height: 1em;
-  top: 0;
-  right: 8;
-  background-color: green;
-}

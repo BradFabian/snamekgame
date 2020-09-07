@@ -1,6 +1,7 @@
 # snamekgame
 
 A snake game built on js css and html. To begin click on the start button. Use your arrow keys to move the snake. Random Apples will appear on the board if you grab an apple the snake will grow and move faster. Hitting the walls of the board will end the game. Click on the restart button to play again.
+To be found at https://bradfabian.github.io/snamekgame/
 
 ### JavaScript Methods Used In This Game
 
